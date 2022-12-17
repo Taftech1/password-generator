@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+      integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="themes">
+      <div>
+        <span class="tm-txt">THEMES:</span>
+        <span class="theme-item tm-1"></span>
+        <span class="theme-item tm-2"></span>
+        <span class="theme-item tm-3"></span>
+        <span class="theme-item tm-4"></span>
+      </div>
+      <div>
+        <ul class="url-con">
+          <li>Our Services</li>
+          <li>History</li>
+          <li>Support</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </section>
+    <h1 class="title">Need a Unique, Secure Password ?</h1>
+      <!-- <p style="text-align: center;">Generate and Save password to all devive</p> -->
+    
+    <section class="password-generated">
+      <div>
+        <h1 class="password">PTx17GXgdKUfcVJk</h1>
+      </div>
+      <div>
+        <i class="fa-solid fa-copy"></i>
+      </div>
+    </section>
+    <section class="main">
+      <div class="character-col">
+        <h1>Character length</h1>
+        <h3 class="range-value">20</h3>
+      </div>
+      <div class="main-container">
+        <input
+          type="range"
+          id="passwordLength"
+          name="range"
+          min="6"
+          max="30"
+          value="16"
+          class="passwordLength"
+        />
+        <br />
+        <input
+          type="checkbox"
+          id="check"
+          name="Include Uppercase Letter"
+          class="check-1 checkedtrue"
+          value="yes"
+        />
+        <label for="">Include Uppercase Letters</label>
+        <br />
+        <input
+          type="checkbox"
+          id="check"
+          name="Include Lower Letter"
+          class="check-2 checkedtrue"
+          value="yes"
+        />
+        <label for="">Include Lower Letters</label>
+        <br />
+        <input
+          type="checkbox"
+          id="check"
+          name="Include Number"
+          class="check-3 checkedtrue"
+          value="yes"
+        />
+        <label for="">Include Numbers</label>
+        <br />
+        <input
+          type="checkbox"
+          id="check"
+          name="Include Symbol"
+          class="check-4 checkedtrue"
+          value="yes"
+        />
+        <label for="">Include Symbols</label>
+      </div>
+      <div class="Strengh-cn">
+        <h3>STRENGTH</h3>
+        <div class="Strengh-bars-cn">
+          <h4 class="Strengh-bars">INFORMATION</h4>
+          <div class="S-bars">
+            <span class="s-bar-1"></span><span class="s-bar-2"></span
+            ><span class="s-bar-3"></span><span class="s-bar-4"></span>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn-generator">
+        GENERATE<i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </section>
+    <!-- NOTIFICATION -->
+    <div class="clippad-notice hide"> 
+      <h2>Copied value to the clipboard</h2>
+      <p class="clip-pass">ec$nh#hC!%fTg5~ajOBGhvE$EBbLvB!</p>
+    </div>
+    <footer>Code By DevLord</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
